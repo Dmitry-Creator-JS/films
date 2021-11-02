@@ -2,15 +2,29 @@
   display: flex;
   justify-content: center;
   background: beige;
+  width: 1200px;
 }
 
 .App {
   display: flex;
   flex-direction: column;
+  border: 5px solid teal;
 }
 
 .header__container {
+
   display: flex;
+  justify-content: center;
+  align-items: center;
+  background: darkorange;
+}
+
+.header__title {
+  margin-left: 10px;
+}
+
+.header__auth {
+  margin-right: 10px;
 }
 
 .item__container {

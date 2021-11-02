@@ -4,12 +4,12 @@ import {getAllFilms} from "../../api/apiRequests";
 import FilmsItem from "./FilmsItem";
 import './../../App.css'
 
-const Films = () => {
+const Films = ({searchQuery}) => {
   const dispatch = useDispatch();
   const films = useSelector(state => state.filmsReducer.films);
 
   useEffect(() => {
-      dispatch(getAllFilms())
+      dispatch(getAllFilms(searchQuery))
   }, [] );
   console.log(films);
   return <div className='films'>
